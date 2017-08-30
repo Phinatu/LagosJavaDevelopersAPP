@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.lagosjavadevelopersapp.DetailActivity">
+
+    <ImageView
+        android:id="@+id/user_image"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/developerimage"/>
+
+    <ImageView
+        android:id="@+id/acc_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_account"
+        android:layout_marginLeft="55dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/user_name"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="26dp"
+        app:layout_constraintTop_toBottomOf="@+id/user_image"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="8dp"/>
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="User Name"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintTop_toBottomOf="@+id/acc_image"
+        android:layout_marginRight="142dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="142dp"/>
+
+
+    <TextView
+        android:id="@+id/git_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Github profile URL"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="98dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.334"
+        android:layout_marginTop="46dp"
+        app:layout_constraintTop_toBottomOf="@+id/user_name"/>
+
+</android.support.constraint.ConstraintLayout>
